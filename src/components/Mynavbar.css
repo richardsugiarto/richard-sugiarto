@@ -1,0 +1,10 @@
+@import "../css/media.css";
+
+.scrollspy {
+    display: flex;
+    margin-bottom: 0;
+}
+
+nav.navbar{
+    opacity: 90%;
+}

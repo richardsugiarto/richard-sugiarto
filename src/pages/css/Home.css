@@ -1,0 +1,20 @@
+.myhome {
+    background-color:#ffffff;
+    height: 100vh;
+    padding-top: 25vh;
+}
+
+.hometext{
+    height:100%;
+    width:100%;
+    margin-top:10vh;
+    text-align:right;
+}
+h1{
+    font-family:'helvetica_ce_55_romanregular';
+    font-weight:'bolder';
+}
+h2{
+    font-family:'helvetica_ce_55_romanregular';
+    font-weight:'bolder';
+}

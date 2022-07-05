@@ -1,0 +1,39 @@
+@media all and (max-width: 992px) {
+    ul.scrollspy {
+        display: block;
+    }
+    div.hometext{
+        margin-top:0vh;
+        text-align:center;
+    }
+    img.rounded-circle{
+        width: 300px;
+        height: 300px;
+        margin-top: 5vh;
+    }
+    div.myhome {
+        background-color:#ffffff;
+        height: 100%;
+        padding-top: 25vh;
+    }
+    div.myabout{
+        height:100%;
+        padding-top:10vh;
+        background-color:#ffffff;
+    }
+    div.myeducation{
+        height:100%;
+        padding-top:10vh;
+        background-color:#ffffff;
+    }
+    img.i-publication{
+        width: 500px;
+        height: 250px;
+        margin-bottom: 10vh;
+    }
+    img.i-about{
+        width: 300px;
+        height: 250px;
+        margin-bottom: 10vh;
+    }
+  }

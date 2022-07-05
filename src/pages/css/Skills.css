@@ -1,0 +1,17 @@
+div.bar{
+    height: 10px;
+    background-color: #c7cbd1;
+    margin:0 auto auto 0;
+}
+
+div.barcontent{
+    height: 10px;
+    background-color: #e85656;
+    margin:0 auto auto 0;
+}
+
+div.bartext{
+    text-align: right;
+    font-size: 10px;
+    font-family: 'Courier New';
+}
