@@ -10,10 +10,10 @@ function Publication()
                 <h2 style={{color:'#555',fontFamily:'helvetica_ce_55_romanregular',fontWeight:'bolder',fontSize:'35px',textTransform:'uppercase'}}>Publication</h2>
                 <div style={{border:'1px solid #e73131',width:'15%',margin:'0 auto'}}></div>
                 <Row style={{paddingTop:'10vh'}}>
-                    <Col lg="6" sm="12">
+                    <Col xxl="6" sm="12">
                        <Image src="assets/[P1].png" width={600} height={300} className="i-publication"/>
                     </Col>
-                    <Col lg="6" sm="12">
+                    <Col xxl="6" sm="12">
                         <p style={{textAlign:'justify'}}>
                             <b>[P1]</b> Helmet Usage Detection on Motorcyclist Using Deep Residual Learning
                             <div style={{fontFamily:'courier'}}>2021 3rd East Indonesia Conference on Computer and Information Technology (EIConCIT), IEEE</div>
