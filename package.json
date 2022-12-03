@@ -21,7 +21,7 @@
   "scripts": {
     "dev": "react-scripts start",
     "predeploy":"yarn run build",
-    "deploy":"gh-pages -b master -d build",
+    "deploy":"gh-pages -b dev -d build",
     "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
