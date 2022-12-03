@@ -39,6 +39,8 @@ npm run deploy
 
 Go to your repository > Settings > Pages (on sidebar). By default, It will choose your `gh-pages` branch to deploy and `/(root)` folder.
 
+![image](asset/github_site_live.png)
+
 ## Flush gh-pages cache
 
 ```
