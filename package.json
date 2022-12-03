@@ -1,6 +1,6 @@
 {
-  "name": "richardPortfolio",
-  "homepage": "https://richardsugiarto.github.io/richardPortfolio/",
+  "name": "richard-sugiarto",
+  "homepage": "https://richardsugiarto.github.io/richard-sugiarto/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,7 +21,7 @@
   "scripts": {
     "dev": "react-scripts start",
     "predeploy":"yarn run build",
-    "deploy":"gh-pages -b dev -d build",
+    "deploy":"gh-pages -d build",
     "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",

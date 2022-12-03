@@ -1,3 +1,52 @@
+# Portofolio
+
+This is my portofolio which created using `REACT`.
+
+# Deployment (github.io)
+
+## Add gh-pages
+
+Run one of this command depend which package installer that you used at root folder
+
+```
+yarn add gh-pages
+npm add gh-pages
+```
+
+## package.json setting
+
+Add this command to package.json
+
+```json    
+"name":"{your-project-name}"
+"home":"https://{your-repository-name}.github.io/{your-project-name}/"
+"script" : {
+    "predeploy":"yarn run build"
+    "deploy":"gh-pages -d build"
+    }
+```
+
+## Deploy command
+
+```
+yarn run deploy
+npm run deploy
+```
+
+> :warning: If you did not name your remote `origin`, you will get an error during this phase stating that: **Failed to get remote.origin.url (task must either be run in a git repository with a configured origin remote or must be configured with the "repo" option).** You can fix it by add remote to the same repository but with named origin.
+
+## Github pages repository setting
+
+Go to your repository > Settings > Pages (on sidebar). By default, It will choose your `gh-pages` branch to deploy and `/(root)` folder.
+
+## Flush gh-pages cache
+
+```
+node node_modules/gh-pages/bin/gh-pages-clean.js
+```
+
+> :warning: If you get an error which state : **fatal: a branch named 'gh-pages' already exists** while executing `gh-pages -d build` from script, You can use the command above.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
