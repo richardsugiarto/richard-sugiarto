@@ -22,4 +22,4 @@ jobs:
         git config --global user.email "rich.sugiarto@gmail.com"
         git config --global user.name "richardsugiarto"
         git remote set-url origin https://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@github.com/richardsugiarto/portofolio.git
-        yarn run deploy
+        npm run deploy
