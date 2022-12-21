@@ -21,5 +21,5 @@ jobs:
       run: |
         git config --global user.email "rich.sugiarto@gmail.com"
         git config --global user.name "richardsugiarto"
-        git remote set-url origin https://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@github.com/richardsugiarto/portofolio.git
+        git remote set-url origin https://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@github.com/richardsugiarto/portofolio.git
         npm run deploy
