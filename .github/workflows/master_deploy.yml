@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - dev
+env:
+  auth_token: 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
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,5 +24,5 @@ jobs:
       run: |
         git config --global user.email "rich.sugiarto@gmail.com"
         git config --global user.name "richardsugiarto"
-        git remote set-url origin https://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@github.com/richardsugiarto/portofolio.git
+        git remote set-url origin https://${{env.auth_token}}@github.com/richardsugiarto/portofolio.git
         npm run deploy
