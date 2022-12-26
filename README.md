@@ -1,6 +1,6 @@
-# Portofolio
+# Resume
 
-This is my portofolio which created using `REACT`.
+This is my resume which created using `REACT`.
 
 # Deployment (github.io)
 
