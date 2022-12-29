@@ -26,7 +26,7 @@ function About() {
                         </Col>
                         <Col lg="6" sm="12">
                             <p style={{ textAlign: 'justify' }}>
-                                Richard Sugiarto seeking React developer positions. Besides his interest about website and software
+                                Richard Sugiarto is a React enthusiast. Besides his interest about website and software
                                 engineering, he also learns deep learning. His latest work in 3D pose reconstruction required a thorough
                                 understanding of the design, implementation, and evaluation process of deep learning models. Integrating
                                 deep learning into website and software is an interest for him.
