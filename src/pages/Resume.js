@@ -23,7 +23,7 @@ function Resume() {
                         <Col lg="6" sm="12">
                             <span style={{ textAlign: 'justify' }}>
                                 <h3>CMS React Developer</h3>
-                                <p style={{ fontStyle: 'italic' }}>Funpodium (奕兆有限公司), Taipei, Taiwan 08/2022 – now</p>
+                                <p style={{ fontStyle: 'italic' }}>Funpodium (奕兆有限公司), Taipei, Taiwan 08/2022 – 02/2023</p>
                                 <p>Required Skills: ReactJS, JavaScript, TypeScript, HTML, CSS, PHP, Drupal, Unix</p>
                                 <p>
                                     ►Cooperate with product managers and back-end development engineers to complete the requirements and
