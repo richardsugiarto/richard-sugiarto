@@ -1,4 +1,7 @@
 @media all and (max-width: 992px) {
+    body{
+        padding-right: 0!important;/*Temporary Fix when the hamburger menu clicked at mobile screen*/
+    }
     ul.scrollspy {
         display: block;
     }
