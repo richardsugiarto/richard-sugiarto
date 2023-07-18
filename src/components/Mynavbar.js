@@ -1,36 +1,142 @@
-import React from "react";
-import {Navbar,Nav,NavDropdown,Container} from "react-bootstrap";
-import Scrollspy from 'react-scrollspy';
-import "./Mynavbar.css"
+import React from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import './Mynavbar.css';
+import { AppBar, Container, Box, Toolbar, IconButton, Typography, Menu, Avatar, Button, Icon, MenuItem } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import { publicURL } from '../utils/publicURL';
 
-function Mynavbar()
-{
-    return (<>
-    <Navbar fixed="top" bg="dark" variant="dark" expand="lg">
-    <Container>
-        <Navbar.Brand href="#home">RICHARD</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-        
-        <Nav className="me-auto">
-        
-        <Scrollspy 
-            className="scrollspy" items={ ['Home', 'About', 'Education', 'Resume','Skills','Publication', 'Contact'] } 
-            currentClassName="active">   
-            <Nav.Link href="#Home">Home</Nav.Link>
-            <Nav.Link href="#About">About</Nav.Link>
-            <Nav.Link href="#Education">Education</Nav.Link>
-            <Nav.Link href="#Resume">Resume</Nav.Link>
-            <Nav.Link href="#Skills">Skills</Nav.Link>
-            <Nav.Link href="#Publication">Publication</Nav.Link>
-            <Nav.Link href="#Contact">Contact</Nav.Link>
-            
-        </Scrollspy></Nav>
-        </Navbar.Collapse>
-    </Container>
-    </Navbar>
-    
-    </>);
+const pages = ['Home', 'About', 'Education', 'Resume', 'Skills', 'Publication', 'Contact'];
+
+function Mynavbar() {
+    const [anchorElNav, setAnchorElNav] = React.useState(null);
+
+    const handleOpenNavMenu = event => {
+        setAnchorElNav(event.currentTarget);
+    };
+
+    const handleCloseNavMenu = () => {
+        setAnchorElNav(null);
+    };
+    return (
+        <>
+            <AppBar position="static" style={{ backgroundColor: '#212529' }}>
+                <Container maxWidth="xl">
+                    <Toolbar disableGutters>
+                        <Avatar sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, backgroundColor: 'white' }}>
+                            <Icon>
+                                <img style={{ width: '100%', height: '100%' }} src={publicURL('/assets/photo.png')} />
+                            </Icon>
+                        </Avatar>
+                        <Typography
+                            variant="h6"
+                            noWrap
+                            component="a"
+                            href="/"
+                            sx={{
+                                mr: 2,
+                                display: { xs: 'none', md: 'flex' },
+                                fontFamily: 'monospace',
+                                fontWeight: 700,
+                                letterSpacing: '.3rem',
+                                color: 'inherit',
+                                textDecoration: 'none',
+                            }}
+                        >
+                            RICHARD
+                        </Typography>
+
+                        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                            <IconButton
+                                size="large"
+                                aria-label="account of current user"
+                                aria-controls="menu-appbar"
+                                aria-haspopup="true"
+                                onClick={handleOpenNavMenu}
+                                color="inherit"
+                            >
+                                <MenuIcon />
+                            </IconButton>
+                            <Menu
+                                id="menu-appbar"
+                                anchorEl={anchorElNav}
+                                anchorOrigin={{
+                                    vertical: 'bottom',
+                                    horizontal: 'left',
+                                }}
+                                keepMounted
+                                transformOrigin={{
+                                    vertical: 'top',
+                                    horizontal: 'left',
+                                }}
+                                open={Boolean(anchorElNav)}
+                                onClose={handleCloseNavMenu}
+                                sx={{
+                                    display: { xs: 'block', md: 'none' },
+                                }}
+                            >
+                                {pages.map(page => (
+                                    <Link
+                                        key={page}
+                                        to={page}
+                                        smooth={true}
+                                        duration={250}
+                                        spy={true}
+                                        exact="true"
+                                        offset={10} // Adjust the offset if needed to account for fixed headers, etc.
+                                    >
+                                        <MenuItem key={page} onClick={handleCloseNavMenu}>
+                                            <Typography textAlign="center">{page}</Typography>
+                                        </MenuItem>
+                                    </Link>
+                                ))}
+                            </Menu>
+                        </Box>
+
+                        <Avatar sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, backgroundColor: 'white' }}>
+                            <Icon>
+                                <img style={{ width: '100%', height: '100%' }} src={publicURL('/assets/photo.png')} />
+                            </Icon>
+                        </Avatar>
+                        <Typography
+                            variant="h5"
+                            noWrap
+                            component="a"
+                            href=""
+                            sx={{
+                                mr: 2,
+                                display: { xs: 'flex', md: 'none' },
+                                flexGrow: 1,
+                                fontFamily: 'monospace',
+                                fontWeight: 700,
+                                letterSpacing: '.3rem',
+                                color: 'inherit',
+                                textDecoration: 'none',
+                            }}
+                        >
+                            RICHARD
+                        </Typography>
+                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                            {pages.map(page => (
+                                <Link
+                                    key={page}
+                                    to={page}
+                                    smooth={true}
+                                    duration={250}
+                                    spy={true}
+                                    exact="true"
+                                    offset={10} // Adjust the offset if needed to account for fixed headers, etc.
+                                >
+                                    <Button key={page} onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
+                                        {page}
+                                    </Button>
+                                </Link>
+                            ))}
+                        </Box>
+                    </Toolbar>
+                </Container>
+            </AppBar>
+        </>
+    );
 }
 
 export default Mynavbar;
