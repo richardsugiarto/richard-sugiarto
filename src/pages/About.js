@@ -24,7 +24,7 @@ function About() {
                         <Grid item md={6} xs={12}>
                             <img src={publicURL('/assets/neural.png')} width={400} height={300} className="i-about" />
                         </Grid>
-                        <Grid md={6} xs={12}>
+                        <Grid item md={6} xs={12}>
                             <p style={{ textAlign: 'justify' }}>
                                 Richard Sugiarto is a React enthusiast. Besides his interest about website and software
                                 engineering, he also learns deep learning. His latest work in 3D pose reconstruction required a thorough
