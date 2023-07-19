@@ -1,12 +1,13 @@
 import React from 'react';
-import { Row, Col, Container, Image } from 'react-bootstrap';
+//import { Row, Col, Container, Image } from 'react-bootstrap';
 import './css/Resume.css';
+import { Container, Grid } from '@mui/material';
 
 function Resume() {
     return (
         <>
             <div className="myResume">
-                <Container>
+                <Container max-width="xl">
                     <h2
                         style={{
                             color: '#555',
@@ -19,8 +20,8 @@ function Resume() {
                         Experience
                     </h2>
                     <div style={{ border: '1px solid #e73131', width: '15%', margin: '0 auto' }}></div>
-                    <Row style={{ paddingTop: '10vh' }}>
-                        <Col lg="6" sm="12">
+                    <Grid container style={{ paddingTop: '10vh' }} spacing={6}>
+                        <Grid item md={6} xs={12}>
                             <span style={{ textAlign: 'justify' }}>
                                 <h3>CMS React Developer</h3>
                                 <p style={{ fontStyle: 'italic' }}>Funpodium (奕兆有限公司), Taipei, Taiwan 08/2022 – 02/2023</p>
@@ -54,8 +55,8 @@ function Resume() {
                                 </p>
                                 <p>►Implemented the glare- and landmark-detection modules using Android Studio and IOS swift.</p>
                             </span>
-                        </Col>
-                        <Col lg="6" sm="12">
+                        </Grid>
+                        <Grid item md={6} xs={12}>
                             <span style={{ textAlign: 'justify' }}>
                                 <h3>Deep Learning Laboratory Assistant</h3>
                                 <p style={{ fontStyle: 'italic' }}>
@@ -90,8 +91,8 @@ function Resume() {
                                     networking, and holding a programming test for IT undergraduate student.
                                 </p>
                             </span>
-                        </Col>
-                    </Row>
+                        </Grid>
+                    </Grid>
                 </Container>
             </div>
         </>
