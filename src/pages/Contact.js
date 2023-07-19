@@ -18,7 +18,7 @@ function Contact() {
                 </h2>
                 <div style={{ border: '1px solid #e73131', width: '15%', margin: '0 auto' }}></div>
                 <div className="Footer" style={{ paddingTop: '10vh',color:'white' }}>
-                    <Container maxWidth="xl" style={{backgroundColor:'rgba(0, 0, 0, 0.8)',padding:'0'}}>
+                    <Container maxWidth="xxl" style={{backgroundColor:'rgba(0, 0, 0, 0.8)',padding:'0'}}>
                         <Grid container spacing={6} >
                             <Grid item md={4} xs={12}>
                                 <h6 style={{fontWeight:'bold',marginBottom:'2em',textTransform:'uppercase'}}>Language</h6>
@@ -29,8 +29,8 @@ function Contact() {
                             <Grid item md={4} xs={12}>
                                 <h6 style={{fontWeight:'bold',marginBottom:'2em',textTransform:'uppercase'}}>Powered with</h6>
                                 <p>ReactJS</p>
-                                <p>HTML</p>
                                 <p>CSS</p>
+                                <p>Bootstrap</p>
                                 <p>MUI</p>
                             </Grid>
                             <Grid item md={4} xs={12}>
@@ -38,7 +38,7 @@ function Contact() {
                                 <p>rich.sugiarto@gmail.com</p>
                                 <p>linkedin.com/in/richard-sugiarto-32b677132</p>
                             </Grid>
-                            <Grid item md={12} xs={12} style={{verticalAlign:'middle',display:'flex',justifyContent:'center',textAlign:'center',marginBottom:'1vh',backgroundColor:'rgba(0, 0, 0, 0.9)',padding:'1vh'}}>
+                            <Grid item md={12} xs={12} style={{marginBottom:'1vh',backgroundColor:'rgba(0, 0, 0, 0.9)',paddingTop:'10px',paddingBottom:'10px'}}>
                                 © 2023 Copyright: Richard Sugiarto
                             </Grid>
                         </Grid>
