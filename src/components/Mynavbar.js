@@ -22,10 +22,7 @@ function Mynavbar() {
             <AppBar position="static" style={{ backgroundColor: '#212529' }}>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
-                        <Avatar sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, backgroundColor: 'white' }}>
-                            <Icon>
-                                <img style={{ width: '100%', height: '100%' }} src={publicURL('/assets/photo.png')} />
-                            </Icon>
+                        <Avatar sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, backgroundColor: 'white' }} src={publicURL('/assets/photo.png')}>
                         </Avatar>
                         <Typography
                             variant="h6"
@@ -92,10 +89,7 @@ function Mynavbar() {
                             </Menu>
                         </Box>
 
-                        <Avatar sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, backgroundColor: 'white' }}>
-                            <Icon>
-                                <img style={{ width: '100%', height: '100%' }} src={publicURL('/assets/photo.png')} />
-                            </Icon>
+                        <Avatar sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, backgroundColor: 'white' }} src={publicURL('/assets/photo.png')}>
                         </Avatar>
                         <Typography
                             variant="h5"
