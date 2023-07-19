@@ -6,7 +6,7 @@
         display: block;
     }
     div.hometext{
-        margin-top:0vh;
+        margin-top:10vh;
         text-align:center;
     }
     div.img-rounded-circle img{
@@ -31,7 +31,6 @@
     img.i-publication{
         width: 300px;
         height: 150px;
-        /*margin-bottom: 10vh;*/
     }
     img.i-about{
         width: 300px;
@@ -39,3 +38,11 @@
         margin-bottom: 10vh;
     }
   }
+/*Navbar*/
+nav.myNav a.active,#menu-appbar a.active {
+    text-decoration: none;
+}
+nav.myNav a.active button {
+    background-color: lightgrey;
+    color: black;
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-//import { Row, Col, Container, Image } from 'react-bootstrap';
 import { publicURL } from '../utils/publicURL';
 import './css/Publication.css';
 import { Container,Grid } from '@mui/material';

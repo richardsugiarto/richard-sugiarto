@@ -18,8 +18,9 @@ function Mynavbar() {
         setAnchorElNav(null);
     };
     return (
-        <>
-            <AppBar position="static" style={{ backgroundColor: '#212529' }}>
+        <nav className="myNav">
+        
+            <AppBar position="fixed" style={{ backgroundColor: '#212529' }}>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
                         <Avatar sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, backgroundColor: 'white' }} src={publicURL('/assets/photo.png')}>
@@ -41,7 +42,7 @@ function Mynavbar() {
                         >
                             RICHARD
                         </Typography>
-
+                        
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                             <IconButton
                                 size="large"
@@ -79,7 +80,7 @@ function Mynavbar() {
                                         duration={250}
                                         spy={true}
                                         exact="true"
-                                        offset={10} // Adjust the offset if needed to account for fixed headers, etc.
+                                        offset={-20} // Adjust the offset if needed to account for fixed headers, etc.
                                     >
                                         <MenuItem key={page} onClick={handleCloseNavMenu}>
                                             <Typography textAlign="center">{page}</Typography>
@@ -88,7 +89,6 @@ function Mynavbar() {
                                 ))}
                             </Menu>
                         </Box>
-
                         <Avatar sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, backgroundColor: 'white' }} src={publicURL('/assets/photo.png')}>
                         </Avatar>
                         <Typography
@@ -118,7 +118,7 @@ function Mynavbar() {
                                     duration={250}
                                     spy={true}
                                     exact="true"
-                                    offset={10} // Adjust the offset if needed to account for fixed headers, etc.
+                                    offset={-20} // Adjust the offset if needed to account for fixed headers, etc.
                                 >
                                     <Button key={page} onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
                                         {page}
@@ -129,7 +129,7 @@ function Mynavbar() {
                     </Toolbar>
                 </Container>
             </AppBar>
-        </>
+        </nav>
     );
 }
 
