@@ -6,6 +6,9 @@
         margin-top:10vh;
         text-align:center;
     }
+    div.hometext a:hover {
+        color: black;
+    }
     div.img-rounded-circle img{
         width: 300px;
         height: 300px;

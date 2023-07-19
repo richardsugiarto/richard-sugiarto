@@ -15,7 +15,7 @@ function Home() {
                                 <h2>Software Engineer & Website Developer</h2>
                                 <br />
                                 <Button variant="primary" href="#About" size="large" sx={{backgroundColor:'#212529',color:'white'}}>
-                                    About me
+                                    <a href='mailto:rich.sugiarto@gmail.com' style={{textDecoration:'none',color:'inherit'}}>Contact Now</a>
                                 </Button>
                             </div>
                         </Grid>

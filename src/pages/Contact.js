@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Grid } from '@mui/material';
+import EmailIcon from '@mui/icons-material/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function Contact() {
     return (
@@ -35,8 +37,8 @@ function Contact() {
                             </Grid>
                             <Grid item md={4} xs={12}>
                                 <h6 style={{fontWeight:'bold',marginBottom:'2em',textTransform:'uppercase'}}>Contact</h6>
-                                <p>rich.sugiarto@gmail.com</p>
-                                <p>linkedin.com/in/richard-sugiarto-32b677132</p>
+                                <a href="mailto:rich.sugiarto@gmail.com" style={{textDecoration:'none',color:'inherit'}}><p><EmailIcon/> rich.sugiarto@gmail.com</p></a>
+                                <a href="https://www.linkedin.com/in/richard-sugiarto-32b677132/" style={{textDecoration:'none',color:'inherit'}}><p><LinkedInIcon/> linkedin.com/in/richard-sugiarto-32b677132</p></a>
                             </Grid>
                             <Grid item md={12} xs={12} style={{marginBottom:'1vh',backgroundColor:'rgba(0, 0, 0, 0.9)',paddingTop:'10px',paddingBottom:'10px'}}>
                                 © 2023 Copyright: Richard Sugiarto
