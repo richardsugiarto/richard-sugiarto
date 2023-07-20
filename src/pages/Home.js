@@ -14,8 +14,8 @@ function Home() {
                                 <h1>Hi I'm Richard Sugiarto</h1>
                                 <h2>Software Engineer & Website Developer</h2>
                                 <br />
-                                <Button variant="primary" href="#About" size="large" sx={{backgroundColor:'#212529',color:'white'}}>
-                                    <a href='mailto:rich.sugiarto@gmail.com' style={{textDecoration:'none',color:'inherit'}}>Contact Now</a>
+                                <Button variant="primary" href="mailto:rich.sugiarto@gmail.com" size="large" sx={{backgroundColor:'#212529',color:'white'}}>
+                                    Contact Now
                                 </Button>
                             </div>
                         </Grid>
