@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  position: relative;
 }
 
 .App-logo {
@@ -12,7 +13,17 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.back{
+  background-image:url('../public/assets/back.webp');
+  background-position: center;
+  background-size: cover;
+  background-color:rgb(255,255,255,0.8);
+  background-blend-mode: overlay;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

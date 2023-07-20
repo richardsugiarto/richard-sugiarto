@@ -6,6 +6,7 @@ import { Container, Grid, Avatar, Button } from '@mui/material';
 function Home() {
     return (
         <>
+        <div className='back'></div>
             <div className="myhome">
                 <Container maxWidth="xl">
                     <Grid container spacing={6}>

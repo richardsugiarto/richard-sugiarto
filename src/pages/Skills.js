@@ -26,7 +26,7 @@ function Skills() {
     ];
     return (
         <>
-            <div style={{ height: '100%', paddingTop: '10vh', backgroundColor: '#ffffff' }}>
+            <div className='mySkill' >
                 <Container max-width="xl">
                     <h2
                         style={{
