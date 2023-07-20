@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import './Mynavbar.css';
-import { AppBar, Container, Box, Toolbar, IconButton, Typography, Menu, Avatar, Button, Icon, MenuItem } from '@mui/material';
+import { AppBar, Container, Box, Toolbar, IconButton, Typography, Menu, Avatar, Button, Icon, MenuItem,Grid } from '@mui/material';
+import EmailIcon from '@mui/icons-material/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MenuIcon from '@mui/icons-material/Menu';
 import { publicURL } from '../utils/publicURL';
 
@@ -19,12 +21,13 @@ function Mynavbar() {
     };
     return (
         <nav className="myNav">
-        
             <AppBar position="fixed" style={{ backgroundColor: '#212529' }}>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
-                        <Avatar sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, backgroundColor: 'white' }} src={publicURL('/assets/photo.png')}>
-                        </Avatar>
+                        <Avatar
+                            sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, backgroundColor: 'white' }}
+                            src={publicURL('/assets/photo.png')}
+                        ></Avatar>
                         <Typography
                             variant="h6"
                             noWrap
@@ -42,7 +45,7 @@ function Mynavbar() {
                         >
                             RICHARD
                         </Typography>
-                        
+
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                             <IconButton
                                 size="large"
@@ -89,8 +92,10 @@ function Mynavbar() {
                                 ))}
                             </Menu>
                         </Box>
-                        <Avatar sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, backgroundColor: 'white' }} src={publicURL('/assets/photo.png')}>
-                        </Avatar>
+                        <Avatar
+                            sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, backgroundColor: 'white' }}
+                            src={publicURL('/assets/photo.png')}
+                        ></Avatar>
                         <Typography
                             variant="h5"
                             noWrap
@@ -125,6 +130,16 @@ function Mynavbar() {
                                     </Button>
                                 </Link>
                             ))}
+                        </Box>
+                        <Box sx={{ flexGrow: 0, p: 0 }}>
+                            <Grid container spacing={0.5}>
+                                <Grid item>
+                                    <a href="mailto:rich.sugiarto@gmail.com" style={{textDecoration:'none',color:'inherit'}}><EmailIcon  sx={{ verticalAlign: 'middle' }} /></a>
+                                </Grid>
+                                <Grid item>
+                                    <a href="https://www.linkedin.com/in/richard-sugiarto-32b677132/" style={{textDecoration:'none',color:'inherit'}}><LinkedInIcon  sx={{ verticalAlign: 'middle' }} /></a>
+                                </Grid>
+                            </Grid>
                         </Box>
                     </Toolbar>
                 </Container>
