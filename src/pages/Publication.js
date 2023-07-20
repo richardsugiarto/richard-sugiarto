@@ -22,7 +22,7 @@ function Publication() {
                     <div style={{ border: '1px solid #e73131', width: '15%', margin: '0 auto' }}></div>
                     <Grid container style={{ paddingTop: '10vh' }} spacing={10}>
                         <Grid item md={6} xs={12}>
-                            <img src={publicURL('/assets/[P1].png')} width={600} height={300} className="i-publication" />
+                            <img src={publicURL('/assets/[P1].webp')} width={600} height={300} className="i-publication" />
                         </Grid>
                         <Grid item md={6} xs={12}>
                             <p style={{ textAlign: 'justify' }}>

@@ -15,3 +15,8 @@ div.bartext{
     font-size: 10px;
     font-family: 'Courier New';
 }
+
+div.mySkill{
+    height: 100%;
+    padding-top: 10vh;
+}

@@ -2,11 +2,12 @@ import React from 'react';
 import { Container, Grid } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import './css/Contact.css'
 
 function Contact() {
     return (
         <>
-            <div style={{ height: '100%', paddingTop: '10vh', backgroundColor: '#ffffff' }}>
+            <div className='myContact'>
                 <h2
                     style={{
                         color: '#555',
@@ -19,7 +20,7 @@ function Contact() {
                     Contact
                 </h2>
                 <div style={{ border: '1px solid #e73131', width: '15%', margin: '0 auto' }}></div>
-                <div className="Footer" style={{ paddingTop: '10vh',color:'white' }}>
+                <div className="Footer" style={{ marginTop:'10vh',color:'white' }}>
                     <Container maxWidth="xxl" style={{backgroundColor:'rgba(0, 0, 0, 0.8)',padding:'0'}}>
                         <Grid container spacing={6} >
                             <Grid item md={4} xs={12}>
