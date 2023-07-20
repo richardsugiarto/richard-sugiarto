@@ -1,10 +1,15 @@
 @import "../css/media.css";
 
-.scrollspy {
-    display: flex;
-    margin-bottom: 0;
+nav.myNav{
+    opacity: 95%;
+    z-index: 9;
+    position:fixed;
 }
-
-nav.navbar{
-    opacity: 90%;
+/*Navbar*/
+nav.myNav a.active,#menu-appbar a.active {
+    text-decoration: none;
+}
+nav.myNav a.active button {
+    background-color: lightgrey;
+    color: black;
 }

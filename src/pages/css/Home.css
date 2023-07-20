@@ -10,6 +10,10 @@
     margin-top:10vh;
     text-align:right;
 }
+
+div.hometext a:hover {
+    color: black;
+}
 h1{
     font-family:'helvetica_ce_55_romanregular';
     font-weight:'bolder';
