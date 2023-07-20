@@ -1,5 +1,8 @@
 import React from 'react';
-import { MDBFooter } from 'mdb-react-ui-kit';
+import { Container, Grid } from '@mui/material';
+import EmailIcon from '@mui/icons-material/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 function Contact() {
     return (
         <>
@@ -16,52 +19,32 @@ function Contact() {
                     Contact
                 </h2>
                 <div style={{ border: '1px solid #e73131', width: '15%', margin: '0 auto' }}></div>
-
-                <div className="Footer" style={{ paddingTop: '5vh' }}>
-                    <MDBFooter bgColor="light" className="text-center text-lg-start text-muted">
-                        <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-                            <div>
-                                <a href="" className="me-4 text-reset">
-                                    <i className="fab fa-google"></i>
-                                </a>
-                                <a href="" className="me-4 text-reset">
-                                    <i className="fab fa-linkedin"></i>
-                                </a>
-                                <a href="" className="me-4 text-reset">
-                                    <i className="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </section>
-
-                        <section className="">
-                            <div className="container text-center text-md-start mt-5">
-                                <div className="row mt-3">
-                                    <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                                        <h6 className="text-uppercase fw-bold mb-4">Language</h6>
-                                        <p>Indonesian</p>
-                                        <p>English</p>
-                                        <p>Chinese</p>
-                                    </div>
-
-                                    <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                                        <h6 className="text-uppercase fw-bold mb-4">Powered with</h6>
-                                        <p>ReactJS</p>
-                                        <p>HTML</p>
-                                        <p>CSS</p>
-                                        <p>Bootstrap</p>
-                                    </div>
-                                    <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                                        <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
-                                        <p>rich.sugiarto@gmail.com</p>
-                                        <p>linkedin.com/in/richard-sugiarto-32b677132</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <div className="text-center p-4" style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-                            © 2022 Copyright: Richard Sugiarto
-                        </div>
-                    </MDBFooter>
+                <div className="Footer" style={{ paddingTop: '10vh',color:'white' }}>
+                    <Container maxWidth="xxl" style={{backgroundColor:'rgba(0, 0, 0, 0.8)',padding:'0'}}>
+                        <Grid container spacing={6} >
+                            <Grid item md={4} xs={12}>
+                                <h6 style={{fontWeight:'bold',marginBottom:'2em',textTransform:'uppercase'}}>Language</h6>
+                                <p>Indonesian</p>
+                                <p>English</p>
+                                <p>Chinese</p>
+                            </Grid>
+                            <Grid item md={4} xs={12}>
+                                <h6 style={{fontWeight:'bold',marginBottom:'2em',textTransform:'uppercase'}}>Powered with</h6>
+                                <p>ReactJS</p>
+                                <p>CSS</p>
+                                <p>Bootstrap</p>
+                                <p>MUI</p>
+                            </Grid>
+                            <Grid item md={4} xs={12}>
+                                <h6 style={{fontWeight:'bold',marginBottom:'2em',textTransform:'uppercase'}}>Contact</h6>
+                                <a href="mailto:rich.sugiarto@gmail.com" style={{textDecoration:'none',color:'inherit'}}><p><EmailIcon/> rich.sugiarto@gmail.com</p></a>
+                                <a href="https://www.linkedin.com/in/richard-sugiarto-32b677132/" style={{textDecoration:'none',color:'inherit'}}><p><LinkedInIcon/> linkedin.com/in/richard-sugiarto-32b677132</p></a>
+                            </Grid>
+                            <Grid item md={12} xs={12} style={{marginBottom:'1vh',backgroundColor:'rgba(0, 0, 0, 0.9)',paddingTop:'10px',paddingBottom:'10px'}}>
+                                © 2023 Copyright: Richard Sugiarto
+                            </Grid>
+                        </Grid>
+                    </Container>
                 </div>
             </div>
         </>

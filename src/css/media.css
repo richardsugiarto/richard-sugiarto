@@ -1,20 +1,22 @@
-@media all and (max-width: 992px) {
-    ul.scrollspy {
-        display: block;
+@media only screen and (max-width: 900px) {
+    body{
+        padding-right: 0!important;/*Temporary Fix when the hamburger menu clicked at mobile screen*/
     }
     div.hometext{
-        margin-top:0vh;
+        margin-top:10vh;
         text-align:center;
     }
-    img.rounded-circle{
+    div.hometext a:hover {
+        color: black;
+    }
+    div.img-rounded-circle img{
         width: 300px;
         height: 300px;
-        margin-top: 5vh;
     }
     div.myhome {
         background-color:#ffffff;
         height: 100%;
-        padding-top: 25vh;
+        padding-top: 10vh;
     }
     div.myabout{
         height:100%;
@@ -27,9 +29,8 @@
         background-color:#ffffff;
     }
     img.i-publication{
-        width: 500px;
-        height: 250px;
-        margin-bottom: 10vh;
+        width: 300px;
+        height: 150px;
     }
     img.i-about{
         width: 300px;
@@ -37,9 +38,18 @@
         margin-bottom: 10vh;
     }
   }
-@media all and (max-width:1400px)
+@media only screen and (min-width:901px)
 {
     img.i-publication{
-        margin-bottom: 10vh;
+        width: 500px;
+        height: 250px;
     }
+}
+/*Navbar*/
+nav.myNav a.active,#menu-appbar a.active {
+    text-decoration: none;
+}
+nav.myNav a.active button {
+    background-color: lightgrey;
+    color: black;
 }

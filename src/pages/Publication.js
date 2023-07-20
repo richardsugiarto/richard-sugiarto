@@ -1,13 +1,13 @@
 import React from 'react';
-import { Row, Col, Container, Image } from 'react-bootstrap';
 import { publicURL } from '../utils/publicURL';
 import './css/Publication.css';
+import { Container,Grid } from '@mui/material';
 
 function Publication() {
     return (
         <>
             <div className="mypublication">
-                <Container>
+                <Container max-width="xl">
                     <h2
                         style={{
                             color: '#555',
@@ -20,11 +20,11 @@ function Publication() {
                         Publication
                     </h2>
                     <div style={{ border: '1px solid #e73131', width: '15%', margin: '0 auto' }}></div>
-                    <Row style={{ paddingTop: '10vh' }}>
-                        <Col xxl="6" sm="12">
-                            <Image src={publicURL('/assets/[P1].png')} width={600} height={300} className="i-publication" />
-                        </Col>
-                        <Col xxl="6" sm="12">
+                    <Grid container style={{ paddingTop: '10vh' }} spacing={10}>
+                        <Grid item md={6} xs={12}>
+                            <img src={publicURL('/assets/[P1].png')} width={600} height={300} className="i-publication" />
+                        </Grid>
+                        <Grid item md={6} xs={12}>
                             <p style={{ textAlign: 'justify' }}>
                                 <b>[P1]</b> Helmet Usage Detection on Motorcyclist Using Deep Residual Learning
                                 <span style={{ fontFamily: 'courier', display: 'inline-block' }}>
@@ -34,8 +34,8 @@ function Publication() {
                                     <b>Richard Sugiarto</b>, Evan Kusuma Susanto, and Yosi Kristian
                                 </i>
                             </p>
-                        </Col>
-                    </Row>
+                        </Grid>
+                    </Grid>
                 </Container>
             </div>
         </>

@@ -1,7 +1,6 @@
 import React from 'react';
-import { Row } from 'react-bootstrap';
-import { Container, Col } from 'react-bootstrap';
 import './css/Skills.css';
+import { Container,Grid } from '@mui/material';
 
 function Skills() {
     const Language = [
@@ -28,7 +27,7 @@ function Skills() {
     return (
         <>
             <div style={{ height: '100%', paddingTop: '10vh', backgroundColor: '#ffffff' }}>
-                <Container>
+                <Container max-width="xl">
                     <h2
                         style={{
                             color: '#555',
@@ -41,8 +40,8 @@ function Skills() {
                         Skills
                     </h2>
                     <div style={{ border: '1px solid #e73131', width: '15%', margin: '0 auto' }}></div>
-                    <Row style={{ paddingTop: '10vh' }}>
-                        <Col lg="4" sm="12">
+                    <Grid container style={{ paddingTop: '10vh' }} spacing={6}>
+                        <Grid item md={4} xs={12}>
                             <h3>Language</h3>
                             {Language.map(({ label, percentage }) => (
                                 <div key={label} style={{ marginBottom: '10px' }}>
@@ -55,8 +54,8 @@ function Skills() {
                                     </span>
                                 </div>
                             ))}
-                        </Col>
-                        <Col lg="4" sm="12">
+                        </Grid>
+                        <Grid item md={4} xs={12}>
                             <h3>Deep Learning</h3>
                             {DeepLearning.map(({ label, percentage }) => (
                                 <div key={label} style={{ marginBottom: '10px' }}>
@@ -69,8 +68,8 @@ function Skills() {
                                     </span>
                                 </div>
                             ))}
-                        </Col>
-                        <Col lg="4" sm="12">
+                        </Grid>
+                        <Grid item md={4} xs={12}>
                             <h3>Website</h3>
                             {Website.map(({ label, percentage }) => (
                                 <div key={label} style={{ marginBottom: '10px' }}>
@@ -83,8 +82,8 @@ function Skills() {
                                     </span>
                                 </div>
                             ))}
-                        </Col>
-                    </Row>
+                        </Grid>
+                    </Grid>
                 </Container>
             </div>
         </>
