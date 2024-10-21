@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/Skills.css';
-import { Container,Grid } from '@mui/material';
+import { Container, Grid } from '@mui/material';
 
 function Skills() {
     const Language = [
@@ -21,7 +21,7 @@ function Skills() {
         { label: 'TypeScript', percentage: '55%' },
         { label: 'PHP', percentage: '55%' },
         { label: 'NodeJS Express', percentage: '75%' },
-        { label: 'AWS (VPS)', percentage: '50%' },
+        { label: 'AWS (ECS)', percentage: '50%' },
         { label: 'Google Cloud (VPS)', percentage: '50%' },
     ];
     return (
